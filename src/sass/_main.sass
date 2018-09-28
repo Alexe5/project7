@@ -10,7 +10,7 @@
 	border-radius: 2px 2px 0 0
 	box-shadow: 0px 25px 49px 1px rgba(15,17,19,.16)
 	position: fixed
-	top: 286px
+	top: 336px
 	right: 0
 	z-index: 1
 	// padding: 24px 0 0 24px
@@ -33,11 +33,12 @@
 	
 .description 
 	background-image: url('../img/description-bg.jpg')
-	background-position: -10px -50px
-	/*height: 100vh*/
-	height: 972px
+	background-repeat: no-repeat
+	background-position: -10px 0
+	height: 1022px
 
 	+r(985)
+		background-position: -200px 0px
 		height: 100%
 
 	&__content 
@@ -163,6 +164,9 @@
 
 		+r(425)
 			margin: 0 5px 5px 5px
+
+.header
+	padding-top: 50px
 
 .nav
 	&__top
@@ -341,6 +345,7 @@
 	height: 1599px
 	
 	+r(1260)
+		background-position: -888px -200px
 		height: auto
 		padding-bottom: 25px
 
