@@ -15,6 +15,11 @@
 	z-index: 1
 	// padding: 24px 0 0 24px
 
+	&:hover
+		color: #444444
+		background: none
+		border: 1px solid #444444
+
 	+r(1400)
 		width: 50px
 		height: 180px
@@ -534,6 +539,10 @@
 	+r(657)
 		margin-top: 25px
 
+	&:hover
+		background: none
+		border: 1px solid #444444
+
 	&:after 
 		position: absolute
 		content: ''
@@ -689,6 +698,9 @@
 		display: block
 		text-decoration: none
 
+		&:hover
+			text-decoration: underline
+
 		+r(1260)
 			margin: 0
 
@@ -729,6 +741,11 @@
 		display: inline-block
 		margin: 0 15px 0 0
 		letter-spacing: .026em
+		transition: 0.3s
+
+		&:hover
+			text-decoration: underline
+			color: #a7d2db
 	
 	&__img 
 		display: inline-block
