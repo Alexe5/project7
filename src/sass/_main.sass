@@ -1,0 +1,729 @@
+.btn-fixed 
+	font-family: 'PFDinDisplayPro-Bold', sans-serif
+	color: #fff
+	font-size: 16px
+	text-decoration: none
+	text-transform: uppercase
+	width: 59px
+	height: 193px
+	background: #555555
+	border-radius: 2px 2px 0 0
+	box-shadow: 0px 25px 49px 1px rgba(15,17,19,.16)
+	position: fixed
+	top: 286px
+	right: 0
+	z-index: 1
+	// padding: 24px 0 0 24px
+
+	+r(1400)
+		width: 50px
+		height: 180px
+		background: rgba(85,85,85,0.5)
+
+	&__text 
+		position: absolute
+		transform: rotate(-90deg)
+		width: 148px
+		top: 86px
+		right: -49px
+
+		+r(1400)
+			top: 79px
+			right: -51px
+	
+.description 
+	background-image: url('../img/description-bg.jpg')
+	background-position: -10px -50px
+	/*height: 100vh*/
+	height: 972px
+
+	+r(985)
+		height: 100%
+
+	&__content 
+		display: flex
+		flex-direction: column
+		align-items: center
+	
+	&__title 
+		font-family: 'PFDinDisplayPro-Regular', sans-serif
+		color: #555555
+		font-size: 96px
+		text-transform: uppercase
+		margin-top: 100px
+		letter-spacing: 0.032em
+
+		+r(985)
+			font-size: 75px
+			margin-top: 50px
+
+		+r(730)
+			font-size: 50px
+
+		+r(490)
+			font-size: 32px
+	
+	&__description 
+		font-family: 'PFDinDisplayPro-Medium', sans-serif
+		color: #555555
+		font-size: 20px
+		margin: 40px 195px 0 326px
+		letter-spacing: 0.024em
+		line-height: 1.5em
+		position: relative
+
+		+r(1125)
+			margin: 40px 60px 0 326px
+
+		+r(985)
+			font-size: 15px
+
+		+r(830)
+			margin: 15px 60px 0 200px
+
+		+r(730)
+			font-size: 13px
+
+		+r(645)
+			margin: 15px 5px 0 125px
+
+		+r(520)
+			font-size: 12px
+			margin: 15px 5px 0 75px
+
+		+r(490)
+			margin: 15px 5px 0 33px
+
+		&:before 
+			position: absolute
+			content: ''
+			top: 14px
+			left: -90px
+			width: 71px
+			height: 2px
+			background: #555555
+			
+			+r(985)
+				top: 10px
+
+			+r(730)
+				top: 9px
+				left: -40px
+				width: 35px
+				height: 1px
+
+			+r(490)
+				left: -25px
+				width: 20px
+		
+	&__link 
+		font-family: 'PFDinDisplayPro-Bold', sans-serif
+		color: #a7d2db
+		font-size: 13px
+		text-transform: uppercase
+		margin: 1px 223px 43px 0
+		letter-spacing: 0.2em
+		align-self: flex-end
+		position: relative
+
+		+r(1125)
+			margin: 15px 80px 25px 0
+
+		+r(490)
+			margin: 15px 20px 25px 0
+
+		&:hover 
+			text-decoration: none
+		
+	&__triangle 
+		position: absolute
+		width: 0
+		height: 0
+		border-top: 4px solid transparent
+		border-left: 5px solid #a7d2db
+		border-bottom: 4px solid transparent
+		top: 4px
+		right: -13px
+	
+	&__text 
+		font-family: 'PFDinDisplayPro-Thin', sans-serif
+		color: #555555
+		font-size: 20px
+		margin: 0 92px 30px 78px
+		letter-spacing: 0.025em
+		line-height: 1.5em
+
+		+r(885)
+			margin: 0 65px 15px 15px
+
+		+r(730)
+			font-size: 16px
+			margin: 0 15px 15px 15px
+			text-align: justify
+
+		+r(425)
+			margin: 0 5px 5px 5px
+
+.nav
+	&__top
+		display: flex
+		justify-content: flex-end
+
+.menu 
+	display: flex
+	justify-content: flex-end
+	margin-right: 2px
+
+	+r(985)
+		display: none
+	
+	&__item 
+		margin-left: 29px
+	
+	&__link, 
+		font-family: 'PFDinDisplayPro-Bold', sans-serif
+		color: #929292
+		font-size: 13px
+		text-decoration: none
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		transition: 0.3s
+
+		&:hover 
+			color: #a7d2db
+		
+		&_active 
+			color: #a7d2db
+
+.lang
+	font-family: 'PFDinDisplayPro-Bold', sans-serif
+	color: #a7d2db
+	font-size: 13px
+	text-decoration: none
+	text-transform: uppercase
+	letter-spacing: 0.05em
+	padding: 2px 2px 0 0
+	margin-left: 27px
+	transition: 0.3s
+
+	+r(1260)
+		margin-right: 15px
+		
+.menu-s 
+	display: flex
+	justify-content: flex-end
+	margin: 39px 46px 0 0
+
+	+r(985)
+		display: none
+
+	&__item 
+		margin-left: 98px
+		position: relative
+
+		&:nth-child(6):after 
+			display: none
+		
+		&:after 
+			position: absolute
+			content: ''
+			width: 1px
+			height: 25px
+			background: #d9d9d9
+			top: 5px
+			right: -45px
+		
+	&__link 
+		font-family: 'PFDinDisplayPro-Regular', sans-serif
+		color: #929292
+		font-size: 12px
+		text-decoration: none
+		text-transform: uppercase
+		letter-spacing: 0.07em
+		transition: 0.3s
+		
+		&:hover 
+			color: #a7d2db
+		
+		&_active 
+			color: #a7d2db
+	
+.steps 
+	height: 400px
+	background: #a7d2db
+
+	+r(730)
+		height: auto
+
+	&__content 
+		display: flex
+		padding: 128px 0 0 41px
+
+		+r(1260)
+			padding: 0 215px
+			flex-wrap: wrap
+			justify-content: space-evenly
+			align-items: center
+			height: 400px
+
+		+r(1135)
+			padding: 0 155px
+
+		+r(1000)
+			padding: 0 85px
+
+		+r(875)
+			padding: 0 23px
+
+		+r(730)
+			padding: 15px 95px
+			height: auto
+
+		+r(500)
+			padding: 15px 0px 15px 50px
+	
+	&__item 
+		/*padding: 0 19px 0 41px*/
+		width: 277px
+		position: relative
+
+		&:nth-child(2) 
+			margin-left: 30px
+
+			+r(1260)
+				margin-left: 0
+		
+		&:nth-child(4) 
+			margin-left: 82px
+
+			+r(1260)
+				margin-left: 0
+		
+		&:after 
+			position: absolute
+			content: ''
+			top: 63px
+			left: -15px
+			background: #fff
+			width: 1px
+			height: 63px
+		
+	&__title 
+		font-family: 'PFDinDisplayPro-Bold', sans-serif
+		color: #555555
+		font-size: 20px
+		text-transform: uppercase
+		letter-spacing: .037em
+
+		+r(500)
+			font-size: 19px
+	
+	&__text 
+		font-family: 'PFDinDisplayPro-Thin', sans-serif
+		font-size: 20px
+		margin: 6px 0 0 0
+		letter-spacing: 0.023em
+		line-height: 1.8em
+		/*width: 231px*/
+	
+	&__number 
+		position: absolute
+		font-family: 'PFDinDisplayPro-Black', sans-serif
+		color: #fff
+		font-size: 40px
+		transform: rotate(-90deg)
+		top: -5px
+		left: -50px
+	
+.schedule 
+	background-image: url('../img/schedule-bg.jpg')
+	background-position: -10px -4px
+	height: 1599px
+	
+	+r(1260)
+		height: auto
+		padding-bottom: 25px
+
+	&__content 
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 79px 0 0 0
+	
+	&__title-s 
+		font-family: 'PFDinDisplayPro-ExtraThin', sans-serif
+		color: #555555
+		font-size: 36px
+		font-weight: 100
+		text-transform: uppercase
+		letter-spacing: 0.6em
+		margin-left: 17px
+		position: relative
+
+		+r(666)
+			font-size: 30px
+
+		+r(560)
+			font-size: 25px
+
+		+r(470)
+			font-size: 17px
+			font-weight: 900
+			margin-left: 7px
+
+		&:after 
+			position: absolute
+			content: ''
+			top: 57px
+			left: 314px
+			background: #828384
+			width: 1px
+			height: 30px
+
+			+r(666)
+				top: 40px
+				left: 50%
+
+			+r(470)
+				top: 25px
+				height: 25px
+		
+	&__title-l 
+		font-family: 'PFDinDisplayPro-Regular', sans-serif
+		color: #555555
+		font-size: 59px
+		text-transform: uppercase
+		margin: 54px -4px 0 0
+		letter-spacing: 0.03em
+		position: relative
+
+		+r(470)
+			font-size: 48px
+			margin: 27px 0 0 0
+
+		&:after 
+			position: absolute
+			content: ''
+			width: 0
+			height: 0
+			border-left: 16px solid transparent
+			border-right: 15px solid transparent
+			border-top: 18px solid #a7d2db
+			top: 82px
+			left: 172px
+
+			+r(666)
+				left: calc(50% - 8px)
+
+			+r(470)
+				left: calc(50% - 12px)
+				top: 60px
+		
+.table 
+	align-self: flex-start
+	margin: 150px 0 0 42px
+	width: 1215px
+
+	+r(1260)
+		align-self: auto
+		margin: 75px 0 0 0px
+		width: auto
+
+	&__row 
+		
+		&:nth-child(1) 
+			height: 68px
+			border-bottom: 1px solid #d7d7d7
+
+			+r(1260)
+				height: auto
+		
+		&:last-child .table__text1 
+			padding-bottom: 31px
+
+			+r(777)
+				padding-bottom: 5px
+		
+	&__title1, &__title2, &__title3, &__title4 
+		font-family: 'PFDinDisplayPro-Bold', sans-serif
+		color: #555555
+		font-size: 20px
+		text-transform: uppercase
+		text-align: left
+		padding: 15px 0 0 42px
+		letter-spacing: 0.03em
+
+		+r(1260)
+			text-align: center
+			padding: 15px 0
+
+		+r(550)
+			font-size: 14px
+			padding: 15px 5px
+	
+	&__title1, &__text1 
+		border-right: 1px solid #d7d7d7
+		width: 316px
+
+		+r(1260)
+			width: auto
+	
+	&__title2, &__text2 
+		border-right: 1px solid #d7d7d7
+		width: 301px
+
+		+r(1260)
+			width: auto
+	
+	&__title3, &__text3 
+		border-right: 1px solid #d7d7d7
+		width: 299px
+
+		+r(1260)
+			width: auto
+	
+	&__text1, &__text2, &__text3, &__text4 
+		font-family: 'PFDinDisplayPro-Medium', sans-serif
+		color: #555555
+		font-size: 20px
+		padding: 28px 0 9px 41px
+		letter-spacing: 0.023em
+
+		+r(1260)
+			padding: 25px 5px 0px 5px
+
+		+r(777)
+			font-size: 19px
+
+		+r(730)
+			font-size: 17px
+
+		+r(657)
+			font-size: 14px
+
+		+r(550)
+			padding: 5px
+	
+	&__text4 
+		text-transform: uppercase
+
+		&:hover 
+			color: #a7d2db
+			cursor: pointer
+			text-decoration: underline
+		
+.btn 
+	font-family: 'PFDinDisplayPro-Bold', sans-serif
+	color: #444444
+	font-size: 13px
+	text-decoration: none
+	text-transform: uppercase
+	background: #c4e5ec
+	border: 1px solid #f8f8f8
+	border-radius: 2px
+	padding: 18px 45px 18px 38px
+	margin-top: 102px
+	letter-spacing: 0.2em
+	position: relative
+
+	+r(657)
+		margin-top: 25px
+
+	&:after 
+		position: absolute
+		content: ''
+		width: 0
+		height: 0
+		border-top: 4px solid transparent
+		border-left: 5px solid #555555
+		border-bottom: 4px solid transparent
+		top: 22px
+		right: 19px
+	
+.footer 
+	height: 648px
+	background: #1c1c1c
+	padding-top: 73px
+
+	+r(1260)
+		height: auto
+		padding-bottom: 25px
+
+	&__content 
+		display: flex
+		flex-direction: column
+		align-items: center
+	
+	&__title 
+		font-family: 'PFDinDisplayPro-ExtraThin', sans-serif
+		color: #555555
+		font-size: 36px
+		font-weight: 100
+		text-transform: uppercase
+		letter-spacing: 0.6em
+		margin-left: 17px
+		position: relative
+
+		+r(666)
+			font-size: 30px
+
+		+r(561)
+			font-size: 25px
+
+		+r(471)
+			font-size: 17px
+			font-weight: 900
+			margin-left: 7px
+
+		&:after 
+			position: absolute
+			content: ''
+			top: 57px
+			left: 313px
+			background: #444444
+			width: 1px
+			height: 30px
+
+			+r(666)
+				top: 40px
+				left: 50%
+
+			+r(470)
+				top: 25px
+				height: 25px
+		
+	&__bottom 
+		display: flex
+		justify-content: space-between
+		width: 100%
+		margin-top: 115px
+
+		+r(390)
+			flex-direction: column-reverse
+			align-items: center
+	
+.address 
+	width: 100%
+	margin-top: 112px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+		
+	+r(1260)
+		padding: 0 25px
+
+	+r(575)
+		flex-direction: column
+		align-items: flex-start
+		margin-top: 35px
+		padding-left: 140px
+
+	+r(500)
+		padding-left: 75px
+
+	+r(375)
+		padding: 0 25px
+	
+	&__item 
+		width: 350px
+		font-style: normal
+
+		&:nth-child(3)
+
+			+r(775)
+				margin-top: -28px
+
+			+r(575)
+				margin-top: 0
+
+		+r(1260)
+			width: auto
+	
+	&__logo 
+		font-family: 'PFDinDisplayPro-Thin', sans-serif
+		color: #515151
+		font-size: 18px
+		text-transform: uppercase
+		padding-left: 32px
+		height: 30px
+		letter-spacing: 0.2em
+		display: flex
+		align-items: center
+
+		+r(1260)
+			padding-left: 0
+
+		&_address 
+			padding-left: 30px
+
+			+r(1260)
+				padding-left: 0
+		
+		&_mail 
+			padding-left: 16px
+
+			+r(1260)
+				padding-left: 0
+		
+	&__img 
+		height: 100%
+	
+	&__name 
+		margin-left: 4px
+
+		&_mail 
+			margin-left: 12px
+		
+	&__text 
+		font-family: 'PFDinDisplayPro-Medium', sans-serif
+		color: #7e7e7e
+		font-size: 36px
+		line-height: 1.3em
+		letter-spacing: -0.003em
+		margin: 4px 0 40px 40px
+		display: block
+		text-decoration: none
+
+		+r(1260)
+			margin: 0
+
+		+r(908)
+			font-size: 28px
+
+		&_s 
+			font-size: 28px
+			margin: 11px 0 0 32px
+
+			+r(1260)
+				margin: 0
+		
+		&_mail 
+			margin-left: 18px
+
+			+r(1260)
+				margin: 0
+		
+.copyright 
+	font-family: 'PFDinDisplayPro-Thin', sans-serif
+	color: #464646
+	font-size: 16px
+	margin: 5px 0 0 28px
+	letter-spacing: 0.05em
+
+.dev 
+	font-family: 'PFDinDisplayPro-Thin', sans-serif
+	color: #464646
+	font-size: 16px
+	margin: -2px 0 0 28px
+	text-decoration: none
+
+	+r(1260)
+		margin: -2px 28px 0 28px
+
+	&__text 
+		display: inline-block
+		margin: 0 15px 0 0
+		letter-spacing: .026em
+	
+	&__img 
+		display: inline-block
