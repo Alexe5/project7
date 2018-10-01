@@ -186,11 +186,24 @@
 
 	+r(985)
 		display: none
+		position: fixed
+		top: 0
+		left: 0
+		flex-direction: column
+		align-items: center
+		justify-content: space-evenly
+		background: rgba(0,0,0,0.95)
+		width: 100%
+		height: 100%
+		z-index: 1
 	
 	&__item 
 		margin-left: 29px
+
+		+r(985)
+			margin: 0
 	
-	&__link, 
+	&__link
 		font-family: 'PFDinDisplayPro-Bold', sans-serif
 		color: #929292
 		font-size: 13px
@@ -199,11 +212,30 @@
 		letter-spacing: 0.05em
 		transition: 0.3s
 
+		+r(985)
+			font-size: 20px
+
 		&:hover 
 			color: #a7d2db
 		
 		&_active 
 			color: #a7d2db
+
+			+r(985)
+				color: #929292
+
+	&__close
+		display: none
+
+		+r(985)
+			display: block
+			position: absolute
+			top: -16px
+			right: 9px
+			color: #a7d2db
+			font-size: 75px
+			font-weight: 900
+			cursor: pointer
 
 .lang
 	font-family: 'PFDinDisplayPro-Bold', sans-serif
@@ -218,6 +250,9 @@
 
 	+r(1260)
 		margin-right: 15px
+
+	+r(985)
+		margin-right: 19px
 		
 .menu-s 
 	display: flex
@@ -257,7 +292,28 @@
 		
 		&_active 
 			color: #a7d2db
-	
+
+.toggle
+	position: absolute
+	top: 15px
+	right: 15px
+	cursor: pointer
+	display: none
+
+	+r(985)
+		display: block
+
+	&__item
+		display: block
+		width: 30px
+		height: 5px
+		border-radius: 5px
+		background: #a7d2db
+		margin-bottom: 5px
+
+		&:nth-child(3)
+			margin: 0
+
 .steps 
 	height: 400px
 	background: #a7d2db
@@ -440,7 +496,11 @@
 		margin: 75px 0 0 0px
 		width: auto
 
-	&__row 
+	&__row
+
+		&:hover td
+			color: #a7d2db
+			text-decoration: underline
 		
 		&:nth-child(1) 
 			height: 68px
@@ -518,14 +578,8 @@
 	&__text4 
 		text-transform: uppercase
 
-		&:hover 
-			color: #a7d2db
+		&:hover
 			cursor: pointer
-			text-decoration: underline
-
-	&__active
-		color: #a7d2db
-		text-decoration: underline
 		
 .btn 
 	font-family: 'PFDinDisplayPro-Bold', sans-serif
@@ -754,3 +808,38 @@
 	
 	&__img 
 		display: inline-block
+
+.popup
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,0.75)
+	z-index: 2
+	display: none
+
+	&__window
+		position: absolute
+		top: calc(50% - 250px)
+		left: calc(50% - 150px)
+		width: 300px
+		height: 500px
+		background: #a7d2db
+		border: 3px solid #ffffff
+		border-radius: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+
+	&__close
+		position: absolute
+		top: -17px
+		right: 5px
+		font-size: 75px
+		font-weight: 900
+		cursor: pointer
+
+	&__text
+		font-family: 'PFDinDisplayPro-Bold', sans-serif
+		font-size: 25px
